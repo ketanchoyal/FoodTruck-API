@@ -77,7 +77,7 @@ export default({ config, db}) => {
     })
 
     // '/v1/foodtruck/:id' -Delete
-    api.delete('/:id', (req, res) => {
+    api.delete('/:id', authenticate, (req, res) => {
         Review.remove({
             foodtruck: req.params.id
         },(err, review) => {
