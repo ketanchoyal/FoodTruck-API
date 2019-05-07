@@ -35,7 +35,9 @@
     "passport": "^0.4.0",
     "passport-local": "^1.0.0",
     "passport-local-mongoose": "^5.0.1",
-    "path": "^0.12.7",
+    "path": "^0.12.7"
+  },
+  "devDependencies": {
     "babel-cli": "^6.26.0",
     "babel-core": "^6.26.3",
     "babel-eslint": "^10.0.1",
@@ -43,8 +45,5 @@
     "babel-preset-stage-0": "^6.24.1",
     "eslint": "^5.16.0",
     "nodemon": "^1.19.0"
-  },
-  "devDependencies": {
-    
   }
 }
