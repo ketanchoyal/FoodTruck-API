@@ -35,6 +35,11 @@ app.use('/api/v1', routes);
 app.server.listen(config.port);
 console.log('Started on port '+ app.server.address().port);
 
+// Base URL test endpoint to see if API is running
+app.get('/', (req, res) => {
+    res.json({ message: 'FoodTruck API is ALIVE!' })
+});
+
 // var server = app.listen(config.port, function () {
 //     var host = server.address().address;
 //     var port = server.address().port;
